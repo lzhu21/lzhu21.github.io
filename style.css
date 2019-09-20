@@ -44,7 +44,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   position: relative;
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 #parallax-container {
@@ -216,16 +216,6 @@ h2 {
 
 .btn:hover {
   background-color: #CCCCCC;
-}
-
-i {
-  margin: 0px 30px;
-  color: #000000;
-  transition: all ease-in-out 150ms;
-}
-
-i:hover {
-  opacity: 0.5;
 }
 
 .scroll-down {
