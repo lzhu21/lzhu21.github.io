@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background: #222;
+  background-color: #ffffff;
   font-family: 'lcd_solidregular', sans-serif;
 }
 
@@ -19,33 +19,29 @@ body {
 }
 
 #layer0 {
-  background: url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/SkyBG.png");
+  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624420847628845057/background.png");
   background-repeat: no-repeat;
 }
 #layer1 {
-  background: url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds1.png");
+  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414208938737673/bottom_lily.png");
   background-repeat: no-repeat;
 }
 #layer2 {
-  background: url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds2.png");
-  background-repeat: no-repeat;
-}
-#layer3 {
-  background: url("https://i.ibb.co/jypNkz3/playful.png");
+  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414210448687115/mid_lily.png");
   background-repeat: no-repeat;
 }
 #layer4 {
-  background: url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds3.png");
+  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414212147511296/top_lily.png");
   background-repeat: no-repeat;
 }
 #layer5 {
-  background: url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Hill.png");
+  background: url("");
   background-repeat: no-repeat;
 }
 
 .content {
-  color: #ffffff;
-  background-color: #030f33;
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   position: relative;
   padding-top: 70px;
@@ -65,9 +61,34 @@ body {
    width: 100%;
 }
 
+#layer3 {
+  background: url("");
+  background-repeat: no-repeat;
+}
+#fish {
+  position: relative;
+  bottom: -25%;
+  left: -30px;
+}
+#fishb {
+  position: relative;
+  bottom: -15%;
+  left: -570px;
+}
+#fishc {
+  position: relative;
+  top: -13%;
+  right: -430px;
+}
+#fishd {
+  position: relative;
+  bottom: -65%;
+  right: -700px;
+}
+
 header {
-  background: rgba(256, 256, 256, 0.35);
-  height: 70px;
+  background: rgba(256, 256, 256, 1);
+  height: 55px;
   position: fixed;
   width: 100%;
   z-index: 9;
@@ -96,7 +117,7 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 50px;
-  padding-top: 26px;
+  padding-top: 20px;
   
   position: relative;
 }
@@ -199,7 +220,7 @@ h2 {
 
 i {
   margin: 0px 30px;
-  color: #FFFFFF;
+  color: #000000;
   transition: all ease-in-out 150ms;
 }
 
@@ -271,4 +292,48 @@ section a {
   text-decoration: none;
   color: #FFFFFF;
   bottom:0;
+}
+
+.desc {
+  z-index: 5;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  padding: 0px 15px;
+  margin: 0;
+  transform: translate(-50%, -70%);
+  background-img: url("");
+}
+
+h4 {
+  font-size: 70px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+p4 {
+  font-size: 20px;
+  color: #000000;
+}
+
+i2 {
+  color: #000000;
+  transition: all ease-in-out 150ms;
+  margin-right: 15px;
+}
+
+i2:hover {
+  color: #ffffff;
+}
+
+section {
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 10px;
 }
