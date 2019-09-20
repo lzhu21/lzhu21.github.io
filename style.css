@@ -159,8 +159,19 @@ nav a:hover::before {
 }
 
 h2 {
+  font-family: 'Fira Sans', sans-serif;
   color: #000000;
   padding-top: 30px;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+}
+p2 {
+  font-family: 'Fira Sans', sans-serif;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -169,6 +180,7 @@ h2 {
   grid-auto-rows: 300px;
   grid-auto-flow: dense;
   justify-items: center;
+  margin-top: 10px;
   }
 
 .grid img {
