@@ -16,6 +16,8 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  text-align: center;
+  padding-right: 60px;
 }
 
 #layer0 {
@@ -57,7 +59,7 @@ body {
    top: 0;
    background-position: center !important;
    transform: translateY(0px);
-   height: 750px; 
+   height: 750px;
    width: 100%;
 }
 
@@ -118,7 +120,7 @@ nav li {
   display: inline-block;
   margin-left: 50px;
   padding-top: 20px;
-  
+
   position: relative;
 }
 
@@ -138,11 +140,11 @@ nav a::before {
   display: block;
   height: 5px;
   background-color: #444;
-  
+
   position: absolute;
   top: 0;
   width: 0%;
-  
+
   transition: all ease-in-out 250ms;
 }
 
@@ -195,7 +197,7 @@ p2 {
 
 .grid .image:hover img {
   transform: scale(1.025);
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .image {
@@ -365,5 +367,6 @@ p5 {
 }
 
 .footer {
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
