@@ -158,6 +158,7 @@ nav a:hover::before {
   padding-left: 40px;
   padding-right: 40px;
   width: 80%;
+  padding-top: 50px;
 }
 
 h2 {
@@ -193,6 +194,7 @@ p2 {
   object-fit: cover;
   display: block;
   transition: all ease-in-out 250ms;
+  border-radius: 10px;
 }
 
 .grid .image:hover img {
@@ -203,6 +205,15 @@ p2 {
 .image {
   position: relative;
   width: 100%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+  margin-right: 30px;
 }
 
 .image .btn-group {
