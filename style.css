@@ -329,6 +329,7 @@ section a {
   margin: 0;
   transform: translate(-50%, -70%);
   background-img: url("");
+  color: white;
 }
 
 h4 {
