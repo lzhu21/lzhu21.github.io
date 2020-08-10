@@ -382,3 +382,185 @@ p5 {
   padding-top: 25px;
   padding-bottom: 20px;
 }
+
+button:focus, div:focus {
+  outline:0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform-style: preserve-3d;
+  transition:
+    background ease-in-out .2s,
+    box-shadow ease-in-out .2s;
+  border-radius: 15px;
+  margin: 45px -5px;
+  width: 300px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: -2px 4px 20px 5px rgba(0, 0, 0, .8);
+}
+
+.box:hover{
+  box-shadow: -2px 4px 15px 5px rgba(0, 0, 0, .8);
+}
+
+.overlay {
+  position: absolute;
+  border-radius:15px;
+  width:100%;
+  height:100%;
+  opacity:0.3;
+  transition: ease-in-out 0.3s;
+}
+
+.box:hover > .overlay {
+  background-color:#000;
+  transition: ease-in-out 0.3s;
+}
+
+.box-1{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365376823132241/commission_3.png");
+}
+.box-2{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365543156514816/all_might.png");
+}
+.box-3{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365547317264401/Shirakumo_Oboro.png");
+}
+.box-4{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365581370818610/kuroo.png");
+}
+.box-5{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365660542500945/nezuko.png");
+}
+.box-6{
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365661398138901/tanjiro.png");
+}
+
+.box .btn-group {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-group button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: 'lcd_solidregular', sans-serif;
+  transition: all ease-in-out 250ms;
+  opacity: 0;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group button:hover {
+  font-size: 40px;
+}
+
+.box:hover button {
+  opacity: 1;
+}
+
+.btn-group {
+  transform: translateZ(30px);
+}
+
+.slick-prev:before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053";
+  color: white;
+  font-size: 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.slick-next:before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054";
+  color: white;
+  font-size: 30px;
+  transition: all ease-in-out 250ms;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    color:#bfc9a9;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  display: inline-block;
+  height: 500px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
