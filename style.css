@@ -388,10 +388,6 @@ button:focus, div:focus {
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 90%;
   display: flex;
   padding: 15px;
@@ -415,11 +411,15 @@ button:focus, div:focus {
   height: 400px;
   background-position: center;
   background-size: cover;
-  box-shadow: -2px 4px 20px 5px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
+  -moz-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
+  box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
 }
 
 .box:hover{
-  box-shadow: -2px 4px 15px 5px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.8);
+  -moz-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.8);
+  box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.8);
 }
 
 .overlay {
@@ -437,7 +437,7 @@ button:focus, div:focus {
 }
 
 .box-1{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365376823132241/commission_3.png");
+  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/742245118689673236/her_radiance.png");
 }
 .box-2{
   background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365543156514816/all_might.png");
@@ -464,7 +464,7 @@ button:focus, div:focus {
   height: 100%;
 }
 
-.btn-group button {
+.box button {
   background-color: transparent;
   border: none;
   color: white;
@@ -477,38 +477,39 @@ button:focus, div:focus {
   margin: 5px;
 }
 
-.btn-group button:not(:last-child) {
+.box button:not(:last-child) {
   border-bottom: none;
 }
 
-.btn-group button:hover {
+.box button:hover {
   font-size: 40px;
+  background-color: transparent;
 }
 
 .box:hover button {
   opacity: 1;
 }
 
-.btn-group {
+.box .btn-group {
   transform: translateZ(30px);
 }
 
 .slick-prev:before {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053";
-  color: white;
+  color: black;
   font-size: 30px;
   transition: all ease-in-out 250ms;
 }
 
 .slick-next:before {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054";
-  color: white;
+  color: black;
   font-size: 30px;
   transition: all ease-in-out 250ms;
 }
 
 .slick-dots li button:before {
-  color: white;
+  color: black;
 }
 
 .slick-dots li.slick-active button:before {
