@@ -13,7 +13,7 @@ body {
   font-family: 'lcd_solidregular', sans-serif;
 }
 
-.container {
+.navbar {
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -88,7 +88,7 @@ body {
   right: -700px;
 }
 
-header {
+.header {
   background: rgba(256, 256, 256, 1);
   height: 55px;
   position: fixed;
@@ -96,7 +96,7 @@ header {
   z-index: 9;
 }
 
-header::after {
+.header::after {
   content: '';
   display: table;
   clear: both;
@@ -157,7 +157,7 @@ nav a:hover::before {
   margin: auto;
   padding-left: 40px;
   padding-right: 40px;
-  width: 80%;
+  width: 65%;
   padding-top: 50px;
 }
 
@@ -388,9 +388,8 @@ button:focus, div:focus {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   display: flex;
-  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,15 +404,19 @@ button:focus, div:focus {
   transition:
     background ease-in-out .2s,
     box-shadow ease-in-out .2s;
-  border-radius: 15px;
-  margin: 45px -5px;
+  border-radius: 10px;
+  margin: 45px 15px;
   width: 300px;
-  height: 400px;
+  height: 300px;
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
   -moz-box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
   box-shadow: -15px 10px 21px -6px rgba(0,0,0,0.52);
+}
+
+.long {
+  height: 400px;
 }
 
 .box:hover{
@@ -424,7 +427,7 @@ button:focus, div:focus {
 
 .overlay {
   position: absolute;
-  border-radius:15px;
+  border-radius:10px;
   width:100%;
   height:100%;
   opacity:0.3;
@@ -434,25 +437,6 @@ button:focus, div:focus {
 .box:hover > .overlay {
   background-color:#000;
   transition: ease-in-out 0.3s;
-}
-
-.box-1{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/742245118689673236/her_radiance.png");
-}
-.box-2{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365543156514816/all_might.png");
-}
-.box-3{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365547317264401/Shirakumo_Oboro.png");
-}
-.box-4{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365581370818610/kuroo.png");
-}
-.box-5{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365660542500945/nezuko.png");
-}
-.box-6{
-  background-image: url("https://cdn.discordapp.com/attachments/508801763349102596/739365661398138901/tanjiro.png");
 }
 
 .box .btn-group {
@@ -482,7 +466,7 @@ button:focus, div:focus {
 }
 
 .box button:hover {
-  font-size: 40px;
+  font-size: 35px;
   background-color: transparent;
 }
 
@@ -521,7 +505,7 @@ button:focus, div:focus {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   padding-top: 30px; /* Location of the box */
   left: 0;
   top: 0;
@@ -564,4 +548,18 @@ button:focus, div:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+hr {
+  margin: 20px;
+  margin-top: 150px;
+  border: 2px solid #d9d9d9;
+}
+
+#space-above {
+  margin-top: 100px;
+}
+
+#space-small {
+  margin-top: 50px;
 }

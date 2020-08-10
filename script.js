@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
     gyroscopeMinAngleX: -45,
     gyroscopeMaxAngleX: 45,
     gyroscopeMinAngleY: -45,
-    gyroscopeMaxAngleY: 45
+    gyroscopeMaxAngleY: 45,
   });
 
   $(document).ready(function(){
@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
       slidesToShow: 3,
       dots:true,
       centerMode: true,
-      infinite: false,
+      infinite: true,
       variableWidth: true
     });
   });
