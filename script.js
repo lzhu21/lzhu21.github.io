@@ -26,12 +26,12 @@ window.addEventListener('scroll', () => {
   }
 }, false)
 
- $(function() {
-    $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.here').offset().top }, 'slow');
-      return false;
-    });
-  });
+ // $(function() {
+ //    $('.scroll-down').click (function() {
+ //      $('html, body').animate({scrollTop: $('section.here').offset().top }, 'slow');
+ //      return false;
+ //    });
+ //  });
 
   VanillaTilt.init(document.querySelectorAll(".box"),{
   	max: 20,

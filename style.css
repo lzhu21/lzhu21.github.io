@@ -17,7 +17,6 @@ body {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding-right: 60px;
 }
 
 #layer0 {
@@ -161,22 +160,6 @@ nav a:hover::before {
   padding-top: 50px;
 }
 
-h2 {
-  font-family: 'Fira Sans', sans-serif;
-  color: #000000;
-  padding-top: 30px;
-}
-
-h3 {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
-}
-p2 {
-  font-family: 'Fira Sans', sans-serif;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -195,11 +178,6 @@ p2 {
   display: block;
   transition: all ease-in-out 250ms;
   border-radius: 10px;
-}
-
-.grid .image:hover img {
-  transform: scale(1.025);
-  opacity: 0.5;
 }
 
 .image {
@@ -352,6 +330,17 @@ i2 {
 
 i2:hover {
   color: #ffffff;
+}
+
+i3 {
+  color: black;
+  transition: all ease-in-out 150ms;
+  margin-right: 15px;
+  font-size: 35px;
+}
+
+i3:hover {
+  color: #aaa;
 }
 
 section {
@@ -562,4 +551,43 @@ hr {
 
 #space-small {
   margin-top: 50px;
+}
+
+.back-button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  transition: all ease-in-out 0.2s;
+  color: black;
+}
+
+.back-button:hover {
+  opacity: 0.3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+p2 {
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
 }
