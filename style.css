@@ -1,22 +1,14 @@
-@font-face {
-    font-family: 'lcd_solidregular';
-    src: url('https://raw.githubusercontent.com/lzhu21/fonts-galore/master/lcd_solid-webfont.woff2') format('woff2'),
-         url('https://raw.githubusercontent.com/lzhu21/fonts-galore/master/lcd_solid-webfont.woff') format('woff'),
-         url('https://raw.githubusercontent.com/lzhu21/fonts-galore/master/lcd_solid-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
   margin: 0;
   background-color: #ffffff;
-  font-family: 'lcd_solidregular', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  font-weight: bold;
 }
 
 #layer0 {
@@ -213,7 +205,7 @@ nav a:hover::before {
   display: block;
   margin: auto;
   margin-bottom: 10px;
-  font-family: 'lcd_solidregular', sans-serif;
+  font-family: 'Nunito', sans-serif;
   transition: all ease-in-out 250ms;
   opacity: 0;
   font-size: 15px;
@@ -241,7 +233,7 @@ nav a:hover::before {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  margin-left: -16px;
+  margin-left: -32px;
   display: block;
   width: 32px;
   height: 32px;
@@ -252,10 +244,16 @@ nav a:hover::before {
   animation: bounce 2s infinite 2s;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-  transform: scale(1)
+  transform: scale(1);
+  font-size: 20px;
 }
 
-.scroll-down:before {
+#down-icon {
+  font-size: 30px;
+  margin-left: 13px;
+}
+
+/* .scroll-down:before {
     position: absolute;
     top: calc(50% - 0px);
     left: calc(50% - 0px);
@@ -266,7 +264,7 @@ nav a:hover::before {
     content: "";
     border: 2px solid white;
     border-width: 0px 0 2px 2px;
-}
+} */
 
 @keyframes bounce {
   0%,
@@ -313,7 +311,6 @@ section a {
 h4 {
   font-size: 70px;
   padding-top: 30px;
-  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -356,10 +353,11 @@ h5 {
 p2 a {
   color: #000000;
   text-decoration: underline;
+  transition: all ease-in-out 150ms;
 }
 
 p2 a:hover {
-  color: #CCCCCC;
+  opacity: 0.4;
 }
 
 
@@ -443,7 +441,7 @@ button:focus, div:focus {
   color: white;
   cursor: pointer;
   display: block;
-  font-family: 'lcd_solidregular', sans-serif;
+  font-family: 'Nunito', sans-serif;
   transition: all ease-in-out 250ms;
   opacity: 0;
   font-size: 30px;
