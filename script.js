@@ -54,7 +54,8 @@ window.addEventListener('scroll', () => {
       dots:true,
       centerMode: true,
       infinite: true,
-      variableWidth: true
+      variableWidth: true,
+      lazyLoad: 'ondemand'
     });
   });
 
