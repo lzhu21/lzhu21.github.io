@@ -12,19 +12,23 @@ body {
 }
 
 #layer0 {
-  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624420847628845057/background.png");
+  background: url("pond/background.png");
+  /* https://cdn.discordapp.com/attachments/508801763349102596/624420847628845057/background.png */
   background-repeat: no-repeat;
 }
 #layer1 {
-  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414208938737673/bottom_lily.png");
+  background: url("pond/bottom lily.png");
+  /* https://cdn.discordapp.com/attachments/508801763349102596/624414208938737673/bottom_lily.png */
   background-repeat: no-repeat;
 }
 #layer2 {
-  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414210448687115/mid_lily.png");
+  background: url("pond/mid lily.png");
+  /* https://cdn.discordapp.com/attachments/508801763349102596/624414210448687115/mid_lily.png */
   background-repeat: no-repeat;
 }
 #layer4 {
-  background: url("https://cdn.discordapp.com/attachments/508801763349102596/624414212147511296/top_lily.png");
+  background: url("pond/top lily.png");
+  /* https://cdn.discordapp.com/attachments/508801763349102596/624414212147511296/top_lily.png */
   background-repeat: no-repeat;
 }
 #layer5 {
